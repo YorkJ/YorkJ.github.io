@@ -1,1883 +1,713 @@
-<!doctype html>
+<!DOCTYPE html>
+<!--[if lte IE 8 ]>
+<html class="ie" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<!--
+***************  *      *     *
+      8          *    *       *
+      8          *  *         *
+      8          **           *
+      8          *  *         *
+      8          *    *       *
+      8          *      *     *
+      8          *        *   ***********    -----Theme By Kieran(http://go.kieran.top)
+-->
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en-US" lang="en-US">
+<!--<![endif]-->
 
-
-
-  
-
-
-<html class="theme-next mist use-motion" lang="zh-Hans">
 <head>
-  <meta charset="UTF-8"/>
-<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
-
-
-
-
-
-
-
-
-
-<meta http-equiv="Cache-Control" content="no-transform" />
-<meta http-equiv="Cache-Control" content="no-siteapp" />
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  
-  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
-
-
-
-
-  
-  
-  
-  
-
-  
-    
-    
-  
-
-  
-
-  
-
-  
-
-  
-
-  
-    
-    
-    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-  
-
-
-
-
-
-
-<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
-
-<link href="/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
-
-
-  <meta name="keywords" content="Hexo, NexT" />
-
-
-
-
-
-
-
-
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico?v=5.1.1" />
-
-
-
-
-
-
-<meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="YorkJ">
-<meta property="og:url" content="http://yorkj.github.io/index.html">
-<meta property="og:site_name" content="YorkJ">
-<meta property="og:description">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="YorkJ">
-<meta name="twitter:description">
-
-
-
-<script type="text/javascript" id="hexo.configurations">
-  var NexT = window.NexT || {};
-  var CONFIG = {
-    root: '/',
-    scheme: 'Mist',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
-    fancybox: true,
-    motion: true,
-    duoshuo: {
-      userId: '0',
-      author: '博主'
-    },
-    algolia: {
-      applicationID: '',
-      apiKey: '',
-      indexName: '',
-      hits: {"per_page":10},
-      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
-    }
-  };
-</script>
-
-
-
-  <link rel="canonical" href="http://yorkj.github.io/"/>
-
-
-
-
-
   <title>YorkJ</title>
+  <!-- Meta data -->
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8" >
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content="YorkJ">
+    <meta name="author" content="YorkJ">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+
+    <!-- Favicon, (keep icon in root folder) -->
+    <link rel="Shortcut Icon" href="/img/favicon.ico" type="image/ico">
+
+    <link rel="alternate" href="/atom.xml" title="YorkJ" type="application/atom+xml">
+    <link rel="stylesheet" href="/css/all.css" media="screen" type="text/css">
+	
+    <link rel="stylesheet" href="/highlightjs/vs.css" type="text/css">
+    
+    
+
+    <!-- Custom stylesheet, (add custom styles here, always load last) -->
+    <!-- Load our stylesheet for IE8 -->
+    <!--[if IE 8]>
+    <link rel="stylesheet" type="text/css" href="/css/ie8.css" />
+    <![endif]-->
+
+    <!-- Google Webfonts (Monserrat 400/700, Open Sans 400/600) -->
+    <link href='//fonts.useso.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='//fonts.useso.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+
+    <!-- Load our fonts individually if IE8+, to avoid faux bold & italic rendering -->
+    <!--[if IE]>
+    <link href='http://fonts.useso.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Montserrat:700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.useso.com/css?family=Open+Sans:600' rel='stylesheet' type='text/css'>
+    <![endif]-->
+
+    <!-- jQuery | Load our jQuery, with an alternative source fallback to a local version if request is unavailable -->
+    <script src="/js/jquery-1.11.1.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/jquery-1.11.1.min.js"><\/script>')</script>
+
+    <!-- Load these in the <head> for quicker IE8+ load times -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="/js/html5shiv.min.js"></script>
+    <script src="/js/respond.min.js"></script>
+    <![endif]-->
+
+
+
+
+
+
+
+
+
+
+  
+  
   
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  
+  <style>.col-md-8.col-md-offset-2.opening-statement img{display:none;}</style>
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+<!--
+<body class="home-template">
+-->
+<body id="index" class="lightnav animsition">
 
-  
-  
-    
-  
+      <!-- ============================ Off-canvas navigation =========================== -->
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
-    <div class="headband"></div>
-
-    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-wrapper">
-  <div class="site-meta ">
-    
-
-    <div class="custom-logo-site-title">
-      <a href="/"  class="brand" rel="start">
-        <span class="logo-line-before"><i></i></span>
-        <span class="site-title">YorkJ</span>
-        <span class="logo-line-after"><i></i></span>
-      </a>
-    </div>
-      
-        <p class="site-subtitle"></p>
-      
-  </div>
-
-  <div class="site-nav-toggle">
-    <button>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-      <span class="btn-bar"></span>
-    </button>
-  </div>
-</div>
-
-<nav class="site-nav">
-  
-
-  
-    <ul id="menu" class="menu">
-      
-        
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
-            
-            首页
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-archives">
-          <a href="/archives" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
-            
-            归档
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-tags">
-          <a href="/tags" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
-            
-            标签
-          </a>
-        </li>
-      
-
-      
-    </ul>
-  
-
-  
-</nav>
-
-
-
- </div>
-    </header>
-
-    <main id="main" class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          <div id="content" class="content">
-            
-  <section id="posts" class="posts-expand">
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2016/07/10/20160710/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/07/10/20160710/" itemprop="url">Leetcode - Find K Pairs with Smallest Sums</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-07-10T16:42:50+08:00">
-                2016-07-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+    <div class="sb-slidebar sb-right sb-style-overlay sb-momentum-scrolling">
+        <div class="sb-close" aria-label="Close Menu" aria-hidden="true">
+            <img src="/img/close.png" alt="Close"/>
         </div>
-      </header>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu">
+            <li><a href="/" class="animsition-link" title="Home">Home</a></li>
+            <li><a href="/archives" class="animsition-link" title="archive">archives</a></li>
+            <!-- Dropdown Menu -->
+			 
+            <li>
+                <a class="sb-toggle-submenu">Works<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                        <li><a href="/" target="_BLANK" class="animsition-link">AAA</a></li>
+                    
+                        <li><a href="/atom.xml" target="_BLANK" class="animsition-link">BBB</a></li>
+                    
+                </ul>
+            </li>
+            
+            
+            
+            <li>
+                <a class="sb-toggle-submenu">Links<span class="sb-caret"></span></a>
+                <ul class="sb-submenu">
+                    
+                    <li><a href="/" class="animsition-link">CCC</a></li>
+                    
+                </ul>
+            </li>
+            
+        </ul>
+        <!-- Lists in Slidebars -->
+        <ul class="sb-menu secondary">
+            <li><a href="/about.html" class="animsition-link" title="about">About</a></li>
+            <li><a href="/atom.xml" class="animsition-link" title="rss">RSS</a></li>
+        </ul>
+    </div>
     
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>You are given two integer arrays <strong>nums1</strong> and <strong>nums2</strong> sorted in ascending order and an integer <strong>k</strong>.  </p>
-<p>Define a pair <strong>(u,v)</strong> which consists of one element from the first array and one element from the second array.  </p>
-<p>Find the k pairs <strong>(u1,v1),(u2,v2) …(uk,vk)</strong> with the smallest sums.  </p>
-</blockquote>
-<p><strong>Example 1:</strong>  </p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Given nums1 = [<span class="number">1</span>,<span class="number">7</span>,<span class="number">11</span>], nums2 = [<span class="number">2</span>,<span class="number">4</span>,<span class="number">6</span>],  k = <span class="number">3</span></span><br><span class="line"></span><br><span class="line">Return: [<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">4</span>],[<span class="number">1</span>,<span class="number">6</span>]</span><br><span class="line"></span><br><span class="line">The first <span class="number">3</span> pairs are returned from the sequence:</span><br><span class="line">[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">4</span>],[<span class="number">1</span>,<span class="number">6</span>],[<span class="number">7</span>,<span class="number">2</span>],[<span class="number">7</span>,<span class="number">4</span>],[<span class="number">11</span>,<span class="number">2</span>],[<span class="number">7</span>,<span class="number">6</span>],[<span class="number">11</span>,<span class="number">4</span>],[<span class="number">11</span>,<span class="number">6</span>]</span><br></pre></td></tr></table></figure>
-<p><strong>Example 2:</strong>  </p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Given nums1 = [<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>], nums2 = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>],  k = <span class="number">2</span></span><br><span class="line"></span><br><span class="line">Return: [<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">1</span>]</span><br><span class="line"></span><br><span class="line">The first <span class="number">2</span> pairs are returned from the sequence:</span><br><span class="line">[<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">2</span>,<span class="number">1</span>],[<span class="number">1</span>,<span class="number">2</span>],[<span class="number">2</span>,<span class="number">2</span>],[<span class="number">1</span>,<span class="number">3</span>],[<span class="number">1</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<p><strong>Example 3:</strong>  </p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">Given nums1 = [<span class="number">1</span>,<span class="number">2</span>], nums2 = [<span class="number">3</span>],  k = <span class="number">3</span> </span><br><span class="line"></span><br><span class="line">Return: [<span class="number">1</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line"></span><br><span class="line">All possible pairs are returned from the sequence:</span><br><span class="line">[<span class="number">1</span>,<span class="number">3</span>],[<span class="number">2</span>,<span class="number">3</span>]</span><br></pre></td></tr></table></figure>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>对于最小k个数这样的问题，通常有如下几种方法：  </p>
-<ol>
-<li>全部排序，提取前k个</li>
-<li>对快排过程作改动，目标为锚点是第k个数</li>
-<li>逐个比较添加至k个</li>
-<li>维护大小为k的最小堆/优先队列</li>
-</ol>
-<p>其中1､3的方法是比较直观的，2､4则是为了减少算法复杂度而分别对1､3作的改进。  </p>
-<p>本题在寻找最小k个数的过程中还需要先计算一个和，因此我们希望需要访问的数越少越好，而不是需要先计算所有组合的和。这样的情况下，3､4的动态方法明显比1､2好。而3､4的区别在于，一个是先比较再添加，一个是先添加再比较。下面分别说明用3､4的思想实现的题解。    </p>
-<h3 id="Solution_1"><a href="#Solution_1" class="headerlink" title="Solution 1"></a>Solution 1</h3><p><strong>逐个比较添加至k个</strong>  </p>
-<p>在这个方法中，我们需要考虑每次要比较什么样的数。  </p>
-<p>显然，若一个下标对已添加，那所有在它之前的下标对一定都已添加（因为它们对应的数都小于该数）。因此只需比较在那之后的下标对。  </p>
-<p>用一个数组记录num1中每一个下标对应num2中已添加的最大下标，然后下一次添加时往后找下标即可。  </p>
-<p>更加直观的表示，是把nums1和nums2分别作为矩阵的行和列，形成m×n的矩阵，且矩阵中的元素(i,j)值为nums1[i]+nums2[j]。在这样的表示下，每一行一定是已添加的元素集中在左边，未添加的元素集中在右边，列同理。于是下一个添加的元素一定是某一行的下一元素，如下面的示意图所示(其中x表示已添加，o表示未添加)：</p>
-<blockquote>
-<p>xxxxxoooo<br>xxxxooooo<br>xxxxooooo<br>xxxoooooo<br>xxooooooo  </p>
-</blockquote>
-<p>具体代码如下：  </p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Solution 1: add</span></span><br><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; kSmallestPairs(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums1, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums2, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        <span class="keyword">int</span> size1=nums1.size();</span><br><span class="line">        <span class="keyword">int</span> size2=nums2.size();</span><br><span class="line">        <span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;&gt; ret;</span><br><span class="line">        <span class="keyword">if</span> (size1==<span class="number">0</span>||size2==<span class="number">0</span>||k&lt;=<span class="number">0</span>) <span class="keyword">return</span> ret;</span><br><span class="line">        <span class="keyword">if</span> (k&gt;size1*size2) k=size1*size2;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt; next(size1,<span class="number">0</span>);</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;k;++i) &#123;</span><br><span class="line">            <span class="keyword">int</span> min=INT_MAX;</span><br><span class="line">            <span class="keyword">int</span> minidx=-<span class="number">1</span>;</span><br><span class="line">            <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;size1;++j) &#123;</span><br><span class="line">                <span class="keyword">if</span> (next[j]&lt;size2) &#123;</span><br><span class="line">                    <span class="keyword">int</span> tmp=nums1[j]+nums2[next[j]];</span><br><span class="line">                    <span class="keyword">if</span> (tmp&lt;min) &#123;</span><br><span class="line">                        min=tmp; minidx=j;</span><br><span class="line">                    &#125;</span><br><span class="line">                &#125;</span><br><span class="line">            &#125;</span><br><span class="line">            ret.push_back(pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;(nums1[minidx],nums2[next[minidx]]));</span><br><span class="line">            next[minidx]++;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>方法1中，每次比较至多size1个数，并且加入一个数。除了最后一小部分，每加入一个数需要size1次相加操作，因此算法复杂度为O(k*size1)。假设size1=size2=sqrt(n)，且数组均匀分布。当k远小于n时，算法复杂度为O(n)；当k与n相近时，算法复杂度为O(n√n)。  </p>
-<h3 id="Solution_2"><a href="#Solution_2" class="headerlink" title="Solution 2"></a>Solution 2</h3><p><strong>最小堆，先添加再比较</strong>  </p>
-<p>与方法1先找出最小的数再加入不同，方法2先把可能的数加入，再通过最小堆比较找出最小的数。<br>同样将两个数组排成上面所示的二维矩阵，发现有这样一个规律：前k个最小的数一定属于前k行(同时也属于前k列)，这是因为后面所有行的数均不小于前k行行首共k个数。换句话说，每次要增加一个最小数只需要增加一行（且取前k列）进入待选数（即入堆），并选出待选数里的最小数即可。<br>具体方法是每次将行首与堆顶比较，然后选择在该行的数入堆之前或之后将堆顶出堆。代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line">    <span class="keyword">typedef</span> pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt; data;</span><br><span class="line">    <span class="keyword">struct</span> cmp &#123; <span class="comment">//默认最大堆，因此要用大于号</span></span><br><span class="line">        <span class="function"><span class="keyword">bool</span> <span class="title">operator</span><span class="params">()</span><span class="params">(data &amp;l, data &amp;r)</span> </span>&#123;</span><br><span class="line">            <span class="keyword">return</span> l.first+l.second &gt; r.first+r.second;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;;</span><br><span class="line">    </span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>, <span class="keyword">int</span>&gt;&gt; kSmallestPairs(<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums1, <span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;&amp; nums2, <span class="keyword">int</span> k) &#123;</span><br><span class="line">        <span class="comment">//Solution 2: heap</span></span><br><span class="line">        <span class="keyword">int</span> size1=nums1.size();</span><br><span class="line">        <span class="keyword">int</span> size2=nums2.size();</span><br><span class="line">        <span class="built_in">vector</span>&lt;pair&lt;<span class="keyword">int</span>,<span class="keyword">int</span>&gt;&gt; ret;</span><br><span class="line">        <span class="keyword">if</span> (size1==<span class="number">0</span>||size2==<span class="number">0</span>||k&lt;=<span class="number">0</span>) <span class="keyword">return</span> ret;</span><br><span class="line">        <span class="keyword">if</span> (k&gt;size1*size2) k=size1*size2;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> m=min(k,size1);</span><br><span class="line">        <span class="keyword">int</span> n=min(k,size2);</span><br><span class="line">        </span><br><span class="line">        priority_queue&lt;data,<span class="built_in">vector</span>&lt;data&gt;,cmp&gt; heap;</span><br><span class="line">        <span class="keyword">int</span> nextrow=<span class="number">0</span>;</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> i=<span class="number">0</span>;i&lt;k;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (nextrow&gt;=m &amp;&amp; heap.empty()) <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">if</span> (nextrow&lt;m &amp;&amp; (heap.empty() || heap.top().first+heap.top().second&gt;nums1[nextrow]+nums2[<span class="number">0</span>])) &#123;</span><br><span class="line">                <span class="keyword">for</span> (<span class="keyword">int</span> j=<span class="number">0</span>;j&lt;n;j++) heap.push(make_pair(nums1[nextrow],nums2[j]));</span><br><span class="line">                nextrow++;</span><br><span class="line">            &#125;</span><br><span class="line">            ret.push_back(heap.top());</span><br><span class="line">            heap.pop();</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> ret;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<p>当k远小于n时，算法复杂度为O(k^2)，与n无关；当k与n相近时，算法复杂度为O(nlog(n))。因此堆的算法在k与n相近时不如方法1，但是如果是对于大数据的情况，k远小于n，它与n无关的优势就体现出来了。特别是当需要从磁盘读入大数据时，可以只选择很小的一部分读取和计算，而不用读入整张表。 </p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2016/05/29/20160529/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/05/29/20160529/" itemprop="url">Leetcode - Valid Number</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-05-29T11:16:31+08:00">
-                2016-05-29
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <blockquote>
-<p>Validate if a given string is numeric.  </p>
-<p>Some examples:<br>“0” =&gt; true<br>“ 0.1 “ =&gt; true<br>“abc” =&gt; false<br>“1 a” =&gt; false<br>“2e10” =&gt; true  </p>
-<p>Note: It is intended for the problem statement to be ambiguous. You should gather all requirements up front before implementing one.  </p>
-</blockquote>
-<h2 id="Solution"><a href="#Solution" class="headerlink" title="Solution"></a>Solution</h2><p>直接判断条件可以，但是太麻烦，各种if-else。  </p>
-<p>考虑把相同的代码块组合成函数，这样逻辑清晰。  </p>
-<h3 id="Solution_1"><a href="#Solution_1" class="headerlink" title="Solution 1"></a>Solution 1</h3><p>一个有效的数具有如下结构：</p>
-<p>valid number = <double>[e<int>]</int></double></p>
-<p>其中[]表示可选，double指不包括e的浮点数。因此判断valid number的顺序就是首先去掉左右的空格（stripMargin），然后从最左边开始，先判断是否存在double（findDouble），如果后面接着’e’的话判断是否存在int（findInt）,最后到达最右边就是一个valid number。其中findXXX函数输入需要找的s子字段，如果没找到返回-1，否则返回找到后的下一个下标。</p>
-<p>接着实现以上三个函数。其中对于findDouble和findInt，先判断第一个字符是否符号（[+,-]），如果是的话从下一个字符开始findUDouble和findUInt，否则从当前字符开始找。</p>
-<p>对于findUDouble，如果首字符是’.’，则从下一个字符开始findUInt，否则从当前字符开始找<uint>[.[<uint>]]形式的数即findUDoubleD。对于findUInt，则是逐个查找是否数字字符即可。</uint></uint></p>
-<p>具体代码如下：</p>
-<figure class="highlight julia"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br></pre></td><td class="code"><pre><span class="line">//Solution <span class="number">1</span>: functions</span><br><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    bool isNumber(string s) &#123;</span><br><span class="line">        int <span class="keyword">begin</span>(<span class="number">0</span>),<span class="keyword">end</span>(<span class="number">0</span>);</span><br><span class="line">        stripMargin(s,<span class="keyword">begin</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">end</span>&lt;=<span class="number">0</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        int fidx=findDouble(s,<span class="keyword">begin</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">if</span> (fidx==<span class="keyword">end</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (fidx==-<span class="number">1</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">if</span> (s[fidx]!=<span class="char">'e'</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        fidx=findInt(s,fidx+<span class="number">1</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">if</span> (fidx==<span class="keyword">end</span>) <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    void stripMargin(string s, int &amp;<span class="keyword">begin</span>, int &amp;<span class="keyword">end</span>) &#123;</span><br><span class="line">        int len=s.length();</span><br><span class="line">        int eidx=len;</span><br><span class="line">        <span class="keyword">while</span> (--eidx&gt;=<span class="number">0</span>&amp;&amp;s[eidx]==<span class="char">' '</span>);</span><br><span class="line">        eidx+=<span class="number">1</span>;</span><br><span class="line">        int bidx=-<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">while</span> (++bidx&lt;eidx&amp;&amp;s[bidx]==<span class="char">' '</span>);</span><br><span class="line">        <span class="keyword">begin</span>=bidx; <span class="keyword">end</span>=eidx;</span><br><span class="line">    &#125;</span><br><span class="line">    int findDouble(string s, int <span class="keyword">begin</span>, int <span class="keyword">end</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">begin</span>&gt;=<span class="keyword">end</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (s[<span class="keyword">begin</span>]==<span class="char">'-'</span>||s[<span class="keyword">begin</span>]==<span class="char">'+'</span>) <span class="keyword">return</span> findUDouble(s,<span class="keyword">begin</span>+<span class="number">1</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> findUDouble(s,<span class="keyword">begin</span>,<span class="keyword">end</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    int findUDouble(string s, int <span class="keyword">begin</span>, int <span class="keyword">end</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">begin</span>&gt;=<span class="keyword">end</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (s[<span class="keyword">begin</span>]==<span class="char">'.'</span>) <span class="keyword">return</span> findUInt(s,<span class="keyword">begin</span>+<span class="number">1</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> findUDoubleD(s,<span class="keyword">begin</span>,<span class="keyword">end</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    int findInt(string s, int <span class="keyword">begin</span>, int <span class="keyword">end</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">begin</span>&gt;=<span class="keyword">end</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">if</span> (s[<span class="keyword">begin</span>]==<span class="char">'-'</span>||s[<span class="keyword">begin</span>]==<span class="char">'+'</span>) <span class="keyword">return</span> findUInt(s,<span class="keyword">begin</span>+<span class="number">1</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> findUInt(s,<span class="keyword">begin</span>,<span class="keyword">end</span>);</span><br><span class="line">    &#125;</span><br><span class="line">    int findUDoubleD(string s, int <span class="keyword">begin</span>, int <span class="keyword">end</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">begin</span>&gt;=<span class="keyword">end</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        int fidx=findUInt(s,<span class="keyword">begin</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">if</span> (fidx==<span class="keyword">end</span>||fidx==-<span class="number">1</span>) <span class="keyword">return</span> fidx;</span><br><span class="line">        <span class="keyword">if</span> (s[fidx]!=<span class="char">'.'</span>) <span class="keyword">return</span> fidx;</span><br><span class="line">        int idx=fidx;</span><br><span class="line">        fidx=findUInt(s,fidx+<span class="number">1</span>,<span class="keyword">end</span>);</span><br><span class="line">        <span class="keyword">if</span> (fidx==-<span class="number">1</span>) <span class="keyword">return</span> idx+<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> fidx;</span><br><span class="line">    &#125;</span><br><span class="line">    int findUInt(string s, int <span class="keyword">begin</span>, int <span class="keyword">end</span>) &#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">begin</span>&gt;=<span class="keyword">end</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        int i=<span class="keyword">begin</span>;</span><br><span class="line">        <span class="keyword">for</span> (;i&lt;<span class="keyword">end</span>;i++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s[i]&lt;<span class="char">'0'</span>||s[i]&gt;<span class="char">'9'</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (i==<span class="keyword">begin</span>) <span class="keyword">return</span> -<span class="number">1</span>;</span><br><span class="line">        <span class="keyword">return</span> i;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="Solution_2"><a href="#Solution_2" class="headerlink" title="Solution 2"></a>Solution 2</h3><p>Solution 1的缺点在于，要写太多函数层层深入。一种减少代码量和函数调用的方法是使用状态机，每读一个字符，根据状态机的转移矩阵判断当前读取数字进入哪一状态。其实Solution 1也是一个个状态判断，但是使用状态机可以把这些状态铺开，从而方便地用转移矩阵索引。</p>
-<p>首先将读入的字符分为INVALID,SPACE,NUMS,DOT,SIGN,E几类，分别对应others, ‘ ‘, digit, ‘.’, [‘+’,’-‘], ‘e’。之后我们将所有的状态分为以下几种：</p>
-<figure class="highlight dart"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"><span class="markdown">/<span class="strong">**States**</span></span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line">-1. Invalid</span><br><span class="line"><span class="bullet">0. </span>SPACE            //begin</span><br><span class="line"><span class="bullet">1. </span>NUMS             //12</span><br><span class="line"><span class="bullet">2. </span>DOT              //. (invalid)</span><br><span class="line"><span class="bullet">3. </span>SIGN             //[+,-] (invalid)(-&gt;[1,2])</span><br><span class="line"><span class="bullet">4. </span>1+DOT            //12.</span><br><span class="line"><span class="bullet">5. </span>2+NUMS           //.12</span><br><span class="line"><span class="bullet">6. </span>4+NUMS           //12.34</span><br><span class="line"><span class="bullet">7. </span>[1,4,5,6]+E      //[double]e (invalid)</span><br><span class="line"><span class="bullet">8. </span>7+NUMS           //[double]e12</span><br><span class="line"><span class="bullet">9. </span>7+SIGN           //[double]e[+,-] (invalid)</span><br><span class="line"><span class="bullet">10. </span>9+NUMS          //[double]3[+,-]12</span><br><span class="line"><span class="bullet">11. </span>SPACE           //end</span><br><span class="line"><span class="emphasis">***</span></span><br><span class="line">*/</span></span></span><br></pre></td></tr></table></figure>
-<p>对每种状态都应该穷尽它可能转移到的下一有效状态，且状态的转移应该是没有歧义的。之后根据这些状态写好转移矩阵，即可逐个字符遍历得到最终状态。注意除了－1之外还有几个状态是无效的（invalid）。</p>
-<p>具体代码如下：</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//Solution 2: finite-state machine</span></span><br><span class="line"><span class="keyword">class</span> Solution &#123;</span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">	<span class="function"><span class="keyword">bool</span> <span class="title">isNumber</span><span class="params">(<span class="built_in">string</span> s)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">enum</span>&#123;INVALID,SPACE,NUMS,DOT,SIGN,E&#125;;</span><br><span class="line">        <span class="keyword">int</span> transitionTable[<span class="number">12</span>][<span class="number">6</span>]=&#123;</span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">0</span>,<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,-<span class="number">1</span>&#125;,        <span class="comment">//0-&gt;[1,2,3]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,<span class="number">1</span>,<span class="number">4</span>,-<span class="number">1</span>,<span class="number">7</span>&#125;,       <span class="comment">//1-&gt;[4,7,11]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">5</span>,-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>&#125;,     <span class="comment">//2-&gt;[5]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">1</span>,<span class="number">2</span>,-<span class="number">1</span>,-<span class="number">1</span>&#125;,      <span class="comment">//3-&gt;[1,2]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,<span class="number">6</span>,-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">7</span>&#125;,      <span class="comment">//4-&gt;[6,7,11]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,<span class="number">5</span>,-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">7</span>&#125;,      <span class="comment">//5-&gt;[7,11]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,<span class="number">6</span>,-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">7</span>&#125;,      <span class="comment">//6-&gt;[7,11]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">8</span>,-<span class="number">1</span>,<span class="number">9</span>,-<span class="number">1</span>&#125;,      <span class="comment">//7-&gt;[8,9]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,<span class="number">8</span>,-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>&#125;,     <span class="comment">//8-&gt;[11]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,-<span class="number">1</span>,<span class="number">10</span>,-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>&#125;,    <span class="comment">//9-&gt;[10]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,<span class="number">10</span>,-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>&#125;,    <span class="comment">//10-&gt;[11]</span></span><br><span class="line">            &#123;-<span class="number">1</span>,<span class="number">11</span>,-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>,-<span class="number">1</span>&#125;     <span class="comment">//11-&gt;[]</span></span><br><span class="line">        &#125;;</span><br><span class="line">        <span class="keyword">int</span> state=<span class="number">0</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">int</span> len=s.length();</span><br><span class="line">        <span class="keyword">for</span> (<span class="keyword">int</span> idx=<span class="number">0</span>;idx&lt;len;idx++) &#123;</span><br><span class="line">            <span class="keyword">if</span> (s[idx]==<span class="string">' '</span>) state=transitionTable[state][SPACE];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (s[idx]&gt;=<span class="string">'0'</span>&amp;&amp;s[idx]&lt;=<span class="string">'9'</span>) state=transitionTable[state][NUMS];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (s[idx]==<span class="string">'.'</span>) state=transitionTable[state][DOT];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (s[idx]==<span class="string">'+'</span>||s[idx]==<span class="string">'-'</span>) state=transitionTable[state][SIGN];</span><br><span class="line">            <span class="keyword">else</span> <span class="keyword">if</span> (s[idx]==<span class="string">'e'</span>) state=transitionTable[state][E];</span><br><span class="line">            <span class="keyword">else</span> state=transitionTable[state][INVALID];</span><br><span class="line">            <span class="keyword">if</span> (state==-<span class="number">1</span>) <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">if</span> (state==-<span class="number">1</span>||state==<span class="number">0</span>||state==<span class="number">2</span>||state==<span class="number">3</span>||state==<span class="number">7</span>||state==<span class="number">9</span>) <span class="keyword">return</span> <span class="literal">false</span>;</span><br><span class="line">        <span class="keyword">else</span> <span class="keyword">return</span> <span class="literal">true</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>状态机方法的代码量明显减少了，但是需要事先精心设计状态机以及它们的转移关系，不如函数方法直观。两种方法的时间复杂度是一样的，因为本质上都是遍历的条件判断。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2016/01/13/20160113/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/01/13/20160113/" itemprop="url">荒唐的羊</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-01-13T14:43:51+08:00">
-                2016-01-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/IMG_6283.PNG" alt="">     </p>
-<p>看到网易云的记录，我才发现自己有多么脑残粉，去年听歌Top10里，居然有9首都是曾绵羊的。于是我努力回想着去年到底听了什么鬼——  </p>
-<blockquote>
-<p>然后又跑去循环了曾轶可的歌单。  </p>
-</blockquote>
-<p>绵羊有一首歌叫《荒唐的羊》，最开始听到时我是很想吐槽的，羊爱上狼这种老梗可以让我想到一百首神曲。然而后来这首歌我还是听了很多遍，只为了听那句：  </p>
-<blockquote>
-<p>爱上你 不因为你的美丽 不因为对的时机<br>不因为我有多孤寂<br>只因阳光很好 你走过我身旁<br>你说我荒不荒唐    </p>
-</blockquote>
-<p>听绵羊的歌也像是一件时不时想要做的荒唐事，虽然她非主流烂唱功简单英语，但就是没有防备的会把你感动到不行，真的是很特别的一个歌手。特别的地方还在于，她太难安利了，在很多人印象里就是一神曲歌手，既不流行又没有逼格。还好曾哥火的时候我还处于消息闭塞的高中时代，躲过了糟糕的印象，现在我的歌单里才会有这么一堆荒唐的趣味。    </p>
-<p>曾绵羊出的歌并不多，不算单曲和改版，迄今四张专辑，两年一张。09年的《Forever Road》是个无比傲娇的孩子，作为争议最大的时候出的第一张专辑，保留了很多青涩，没有这种趣味的人可能会听不习惯。当然也有人觉得还不够青涩，比如当时自称「罗永浩_可爱多」的老罗就不满高晓松的制作，自己做了更加恶趣味版的《还能孩子多久》和《勇敢一点》。而高晓松做的则是比较能让人接受的这10首歌：  </p>
-<ul>
-<li>《最天使》</li>
-<li>《Forever Road》</li>
-<li>《电车计划》</li>
-<li>《白色秋天》</li>
-<li>《新的家》</li>
-<li>《Good Night》</li>
-<li>《还能孩子多久》</li>
-<li>《你是我最好的朋友》</li>
-<li>《视觉系》</li>
-<li>《狮子座》</li>
-</ul>
-<p>这张专每首歌都很好，不知道从哪一首说起，所以就不说了。  </p>
-<p>11年的第二张专辑《一只猫的旅行》是21岁的曾轶可。那个傲娇的小孩长大了一点点，她说：</p>
-<blockquote>
-<p>forever 21<br>我有很多事情要做<br>说对不起 说我爱你<br>都是我 都是我<br>——《Forever 21》  </p>
-</blockquote>
-<p>21岁的曾轶可，开始经常化妆：</p>
-<blockquote>
-<p>有几次卸妆的时候 我受了点伤<br>脸上红红的地方 没事 一点小伤<br>你曾经吻我 也是这个地方<br>现在变成这样 心疼我的模样<br>——《卸妆》  </p>
-</blockquote>
-<p>21岁的曾轶可，开始学穿高跟鞋：</p>
-<blockquote>
-<p>想要分一半的爱给孩子气<br>剩下的一半可不可以留给成熟的自己<br>穿上它踩着它<br>才会懂得 跌跌撞撞的意义<br>——《分一半的爱给高跟鞋》  </p>
-</blockquote>
-<p>21岁的曾轶可，开始疑惑那些挥霍的爱：</p>
-<blockquote>
-<p>分分合合是我们<br>常做的不经大脑的事情<br>我们经常哭完笑<br>或者是笑着哭红了眼睛<br>——《每个路人熄灭一盏灯》</p>
-</blockquote>
-<p>开始品尝爱的苦涩：</p>
-<blockquote>
-<p>我需要现在 可你还不回来<br>我需要未来 可你都不敢猜<br>我需要大大的花园 里面种长长的誓言<br>有这么难吗 还爱不爱啊<br>——《我是你的，你是我的》  </p>
-</blockquote>
-<p>这张专辑里有几首命题作文。《Baby Sister》是快乐女声主题曲，《夜车》是王力宏导演的电影主题曲，《给你满分的我》是某段时间的麦当劳主题曲。最近还有一首命题作文《花样年华》是同名综艺节目的主题曲。这些歌其实都挺应景的，还不习惯她的同学可以从这几首开始食用，特别是《夜车》，吃过的人都说好。  </p>
-<p>13年第三张专辑《会飞的贼》高晓松又当回了制作人。这张专辑全是情歌，而且还是各种单恋的羊：</p>
-<blockquote>
-<p>飞去太阳 偷走让人爱的阳光<br>飞去月亮 偷走让人怜的悲伤<br>飞去你心上 把阳光和悲伤一起释放<br>如果你还不懂 你还不要 你还不爱<br>那我就继续逃亡<br>——《会飞的贼》  </p>
-</blockquote>
-<p>在这张专辑里，曾轶可的词磨练得更好了：</p>
-<blockquote>
-<p>oh 和你相爱就像一个秘密<br>无处藏身的秘密<br>我的心永远是一个秘密<br>它永远在想你<br>——《女人的秘密》  </p>
-</blockquote>
-<p>以及：</p>
-<blockquote>
-<p>让蜡烛代替所有灯 让音乐代替话语声<br>此时无声胜有声<br>如果要我开口 只能说一句话<br>让我成为你的有可能<br>——《有可能的夜晚》  </p>
-</blockquote>
-<p>单恋的羊最后心累了，决定潇洒地离开：</p>
-<blockquote>
-<p>我从你的身边开过也许你也不会记得<br>等雨后天放晴了 我就微笑着把你忘了<br>然后也不回头 再爱也不回头<br>这是我廉价的爱情开始珍贵的时刻<br>——《骑摩托的人》  </p>
-</blockquote>
-<p>还记得第一张专辑的摩托吗，那个不经世事的孩子才是真的潇洒：</p>
-<blockquote>
-<p>想决定就决定了 没有下一步也没有为什么<br>想放弃就放弃了 放弃也是一种美丽呢<br>想说就说出口了 计划也算是誓言吗<br>电车计划 不惧怕雨水和太阳的谎话<br>——《电车计划》  </p>
-</blockquote>
-<p>经历痛苦的单恋后，按照两年一专的节奏到了15年的第四张专辑《25岁的晴和雨》。比较早的时候曾轶可有在尝试玩一些复杂的编曲，出了一首《风景》。那首我感觉太满了，像是刚开始玩，什么都想加上去。直到四专的《星星月亮》，就驾驭得很好了。作为新专第一首歌，《星星月亮》刚出来时是很大的惊喜，也预示着曾轶可在音乐上的转变和成长。专辑的发布方式很有意思，每月14号发布一张单曲，每张单曲的封面都是曾轶可自己画的画。  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/38dbb6fd5266d016057560c2912bd40734fa35ef.jpg" alt="">   </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/50da81cb39dbb6fd51d702cc0f24ab18962b374f.jpg" alt="">   </p>
-<p>《25岁的晴和雨》这张专辑，「雨篇」是到了25岁终于开始感慨的曾轶可，她的词和曲变得工整，变成困惑的世人：  </p>
-<blockquote>
-<p>蜜蜂和花不定谁甜蜜了谁<br>男和女不定谁伤害了谁<br>我和你不定谁更爱谁<br>——《诗人的眼泪》</p>
-</blockquote>
-<p>「晴篇」则更多的是尝试新的可能性，有对她一贯的小情绪在音乐上新的表达，有着重于编曲的《星星月亮》，还有《破车》这样讲梦想的歌： </p>
-<blockquote>
-<p>坐我的破车 听一个笑话<br>说不定笑着 眼泪就来了<br>北京北京 无数个傻瓜<br>忘了流泪 也忘了回家<br>——《破车》</p>
-</blockquote>
-<p>还记得第二张专辑的夜车吗，就是吃过都说好的那个。那辆车离开一个安静的小城，然后在大城里颠簸成了噼里啪啦的破车。就像潇洒的电车变成了决绝的摩托那样。  </p>
-<p><strong>所以那个问着「我还能孩子多久」的小孩，终于还是长大了啊。</strong>  </p>
-<p><strong>原来长大并没有那么可怕。</strong>  </p>
-<p><strong>虽然有雨天的低落，但是可以在晴天看到很特别的彩虹啊。</strong>  </p>
-<p><strong>虽然会经历想象不到的事，但还是可以长成自己想要的样子啊。</strong>   </p>
-<blockquote>
-<p>嗯，曾轶可我还可以再听100年。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2016/01/02/20160102/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2016/01/02/20160102/" itemprop="url">2015观影回忆</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2016-01-02T09:18:48+08:00">
-                2016-01-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>看了一下豆瓣记录，去年一年去影院看了11部电影，作为一个闵大荒的吃土少女，能保持一个月一部的频率已经是很难得了。主要归功于菁菁堂和碧江广场，极大地丰富了人民群众的文化生活。那么就来回忆一下这几部电影的观感。  </p>
-<h4 id="u3010_u5341_u4E8C_u6708_u3011_u5BFB_u9F99_u8BC0__u2605_u2605_u2605_u2605_u2606"><a href="#u3010_u5341_u4E8C_u6708_u3011_u5BFB_u9F99_u8BC0__u2605_u2605_u2605_u2605_u2606" class="headerlink" title="【十二月】寻龙诀 ★★★★☆"></a>【十二月】寻龙诀 ★★★★☆</h4><p><strong>导演：乌尔善</strong><br><strong>主演：陈坤/黄渤/舒淇/杨颖/夏雨</strong><br><strong>上映日期：2015-12-18</strong>  </p>
-<blockquote>
-<p>值得去电影院看，整部看下来很流畅，也有不少抓人的小点。  </p>
-<p>作为系列小说改编的电影，虽然是一个小故事但是背后有作者设定的大框架，所以不会有零散和不通的地方。故事构建基本按照冒险类型的模式来，几个性格各异有点小冲突或小暧昧的正派，用来推进或阻挠的大反派和小喽啰，过程惊险刺激，结局皆大欢喜。能把故事讲好，让观众得到快感，又不觉得被侮辱了智商，这部电影做到了商业片合格线上。  </p>
-<p>特效感人，很适合3D，时不时被吓到。还好它并不打算做成恐怖悬疑片，否则大晚上的墓地干尸，承受不来啊。  </p>
-<p>演技感人，几位主演都是让人可以期待的好演员。陈坤留了胡子完全认不出来，黄渤依然收放自如，舒淇依然很有风情。夏雨和他以前的形象完全不同，但是演得超级好，把小人物演得惟妙惟肖，一个大大的赞。  </p>
-<p>结尾差点以为陈坤真over了，心里想说不会吧主角诶，还好最后跳出来了。不过跳得有点强行HE，就是虐一下主角煽个情，然后天降主角光环。但是煽情那里促不及防被感动了，你知道我最喜欢你什么吗？最喜欢你骂我的样子，台词满分。    </p>
-<p>总之，期待做成像木乃伊的系列，期待下一部。  </p>
-</blockquote>
-<h4 id="u3010_u5341_u4E00_u6708_u3011_u6211_u7684_u5C11_u5973_u65F6_u4EE3__u2605_u2605_u2605_u2606_u2606"><a href="#u3010_u5341_u4E00_u6708_u3011_u6211_u7684_u5C11_u5973_u65F6_u4EE3__u2605_u2605_u2605_u2606_u2606" class="headerlink" title="【十一月】我的少女时代 ★★★☆☆"></a>【十一月】我的少女时代 ★★★☆☆</h4><p><strong>导演：陈玉珊</strong><br><strong>主演：宋芸桦/王大陆/李玉玺</strong><br><strong>上映日期：2015-11-19</strong>  </p>
-<blockquote>
-<p>一个典型的开头，都市女白领疲于职场的烦心事，然后展开各种的回忆或者奇遇或者妖娥子。  </p>
-<p>类似于初恋这件小事，丑女孩为了心仪的男生变美，懵懂的爱情，错过的缘份，无数人的青春。不是所有女孩都是美的，但是所有女孩都有一个变美的过程。从大大咧咧的小屁孩到开始在乎身材在乎打扮在乎小眼睛黑皮肤，有一点小心思和一整套的内心戏，有时小心翼翼把一切藏着掖着偷偷失落，有时又不顾一切做一些特别夸张的事然后觉得自己傻到爆。青春就是这样一场拙劣的演习，当我们摆脱那种愚蠢时也就失去了这永远不能再现的冒险。  </p>
-<p>所以青春片特别容易引起大群人的共鸣，这并不能代表它多好，毕竟所有这种片子都有人痛哭流涕。当然在最近泛滥的青春片里，这部片还算处理得比较自然，属于诚意之作。  </p>
-<p>不过这也只能算是一剂麻药了。基于它的目标受众，男主基本是为了满足少女心而出现的，又帅又聪明，一个桀骜一个儒雅，而且还爱女主爱得深沉。特别是徐太宇，为女主默默付出拼命打架最后放手，像所有偶像片一样，少女心又一次得到了满足，却毁了一个原本可以是关于叛逆和成长的少年时代。当然导演本来也没打算有这一部分，只是各种脸谱化的角色让整个故事落入俗套，原本出彩的细节成了狗血剧情的补丁，我这种上了年纪的阿姨只好掩面看完。  </p>
-<p>看完的感觉就是，哦，我果然过了那个时代。不过还是有两个收获：之后那个周末跑去滑冰，get了新技能；以及再下一个周末用尤克里里弹唱小幸运，get了新曲子。  </p>
-</blockquote>
-<h4 id="u3010_u5341_u6708_u3011_u590F_u6D1B_u7279_u70E6_u607C__u2605_u2605_u2605_u2606_u2606"><a href="#u3010_u5341_u6708_u3011_u590F_u6D1B_u7279_u70E6_u607C__u2605_u2605_u2605_u2606_u2606" class="headerlink" title="【十月】夏洛特烦恼 ★★★☆☆"></a>【十月】夏洛特烦恼 ★★★☆☆</h4><p><strong>导演：闫非/彭大魔</strong><br><strong>主演：沈腾/马丽/尹正/王智</strong><br><strong>上映日期：2015-09-30</strong>  </p>
-<blockquote>
-<p>是的这就是一部屌丝片。  </p>
-<p>一个完全的loser，每天浑浑噩噩靠老婆养活。有一天突然穿越到过去，靠着信息差咸鱼翻身，得名得利，迎娶梦中女神，走上人生颠峰。最后美梦破灭，男主回到糟糠之妻的怀中痛哭流涕。  </p>
-<p>马冬梅这样率性可爱的女人，比谁都懂得欣赏夏洛的才华和脾性，可惜夏洛一直没有真正懂得她的爱。对于这样的男人，当他怀才不遇的时候，家是供他求取和发泄的地方；意气风发的时候，家则是一个已经征服了的失去吸引力的地方。  </p>
-<p>这个故事告诉我们，不要傻傻为男人付出太多。就算已经付出了，也不要指望他可以回馈你什么。  </p>
-</blockquote>
-<h4 id="u3010_u516B_u6708_u3011_u6EDA_u86CB_u5427_uFF01_u80BF_u7624_u541B__u2605_u2605_u2606_u2606_u2606"><a href="#u3010_u516B_u6708_u3011_u6EDA_u86CB_u5427_uFF01_u80BF_u7624_u541B__u2605_u2605_u2606_u2606_u2606" class="headerlink" title="【八月】滚蛋吧！肿瘤君 ★★☆☆☆"></a>【八月】滚蛋吧！肿瘤君 ★★☆☆☆</h4><p><strong>导演：韩延</strong><br><strong>主演：白百何/吴彦祖/李媛</strong><br><strong>上映日期：2015-08-13</strong>  </p>
-<blockquote>
-<p>看完挺失望的。有熊顿的漫画和人生经历，又是一个治愈系的故事，本来是能拍成特别好的片子的。可是里面好的笑点和泪点都是漫画里就有的，没有发挥出电影的优势，反而很多地方显得浮夸和肤浅。死亡这种话题，不是别人表现出乐观就真的可以轻描淡写划过的。而导演除了把漫画再现，其它地方都乏善可陈，甚至感觉他连真实的绝症和病房是什么样的这种功课都没做，硬是拍成了轻飘飘的文艺小清新。特别是一群人在那边又是花痴又是痛骂上司又是雪中奔跑的，瞬间变成失恋33天和小时代，简直不能忍。  </p>
-<p>如果这个故事，有其他导演再来拍一遍就好了。  </p>
-</blockquote>
-<h4 id="u3010_u4E03_u6708_u3011_u6349_u5996_u8BB0__u2605_u2605_u2605_u2606_u2606"><a href="#u3010_u4E03_u6708_u3011_u6349_u5996_u8BB0__u2605_u2605_u2605_u2606_u2606" class="headerlink" title="【七月】捉妖记 ★★★☆☆"></a>【七月】捉妖记 ★★★☆☆</h4><p><strong>导演：许诚毅</strong><br><strong>主演：白百何/井柏然/姜武</strong><br><strong>上映日期：2015-07-16</strong>  </p>
-<blockquote>
-<p>挺好看的，下一部还会去看。白百何演这种角色已经拿捏自如，以及钟汉良好帅。就是胡巴的外形有点不是那么萌，所以周边没有做起来。    </p>
-<p>像每部这种电影一样，最后一定会有一个煽情的部分，然后我一定会被煽情到。等以后看了下一部再来写写胡巴和那些妖。</p>
-</blockquote>
-<h4 id="u3010_u4E03_u6708_u3011_u897F_u6E38_u8BB0_u4E4B_u5927_u5723_u5F52_u6765__u2605_u2605_u2605_u2606_u2606"><a href="#u3010_u4E03_u6708_u3011_u897F_u6E38_u8BB0_u4E4B_u5927_u5723_u5F52_u6765__u2605_u2605_u2605_u2606_u2606" class="headerlink" title="【七月】西游记之大圣归来 ★★★☆☆"></a>【七月】西游记之大圣归来 ★★★☆☆</h4><p><strong>导演：田晓鹏</strong><br><strong>主演：张磊/林子杰/吴文伦</strong><br><strong>上映日期：2015-07-10</strong>  </p>
-<blockquote>
-<p>如果宣传别打那么满满的情怀牌可能我观影的感受还会好一点。看完感觉特效还行吧，其它就没有必要强行情怀了，只是讲完了一个没什么亮点的故事，大家的感动点是不是都在电影之外了。  </p>
-</blockquote>
-<h4 id="u3010_u516D_u6708_u3011_u5206_u6B67_u80052_3A_u7EDD_u5730_u53CD_u51FB__u2605_u2605_u2605_u2606_u2606"><a href="#u3010_u516D_u6708_u3011_u5206_u6B67_u80052_3A_u7EDD_u5730_u53CD_u51FB__u2605_u2605_u2605_u2606_u2606" class="headerlink" title="【六月】分歧者2:绝地反击 ★★★☆☆"></a>【六月】分歧者2:绝地反击 ★★★☆☆</h4><p><strong>导演：Robert Schwentke</strong><br><strong>主演：Shailene Woodley/Theo James/Kate Winslet</strong><br><strong>上映日期：2015-06-19</strong>  </p>
-<blockquote>
-<p>没什么特别的，就是男女主都有点太正派和完美和突出了，不过我挺愿意来这么点鸡汤的。还有好想有个帅气的短发。  </p>
-</blockquote>
-<h4 id="u3010_u4E94_u6708_u3011_u660E_u65E5_u4E16_u754C__u2605_u2605_u2605_u2606_u2606"><a href="#u3010_u4E94_u6708_u3011_u660E_u65E5_u4E16_u754C__u2605_u2605_u2605_u2606_u2606" class="headerlink" title="【五月】明日世界 ★★★☆☆"></a>【五月】明日世界 ★★★☆☆</h4><p><strong>导演：Phillip Bradley Bird</strong><br><strong>主演：Britt Robertson/George Clooney/Raffey Cassidy</strong><br><strong>上映日期：2015-05-26</strong>  </p>
-<blockquote>
-<p>隔了半年多，只记住了女主的满脸雀斑。  </p>
-</blockquote>
-<h4 id="u3010_u56DB_u6708_u3011_u901F_u5EA6_u4E0E_u6FC0_u60C57__u2605_u2605_u2606_u2606_u2606"><a href="#u3010_u56DB_u6708_u3011_u901F_u5EA6_u4E0E_u6FC0_u60C57__u2605_u2605_u2606_u2606_u2606" class="headerlink" title="【四月】速度与激情7 ★★☆☆☆"></a>【四月】速度与激情7 ★★☆☆☆</h4><p><strong>导演：温子仁</strong><br><strong>主演：Vin Diesel/Jason Stantham/Paul Walker</strong><br><strong>上映日期：2015-04-12</strong>  </p>
-<blockquote>
-<p>咦当时为什么只打了两星？可能是没什么亮点吧，对这种伟光正主角永远能力超强化险为夷赢得胜利的片子免疫了，各种飙车并不能够激起肾上腺素。然后我又没什么速度与激情的情结或者Paul情结，并不想强行感动。  </p>
-</blockquote>
-<h4 id="u3010_u4E09_u6708_u3011_u738B_u724C_u7279_u5DE5_uFF1A_u7279_u5DE5_u5B66_u9662__u2605_u2605_u2605_u2605_u2606"><a href="#u3010_u4E09_u6708_u3011_u738B_u724C_u7279_u5DE5_uFF1A_u7279_u5DE5_u5B66_u9662__u2605_u2605_u2605_u2605_u2606" class="headerlink" title="【三月】王牌特工：特工学院 ★★★★☆"></a>【三月】王牌特工：特工学院 ★★★★☆</h4><p><strong>导演：Matthew Vaughn</strong><br><strong>主演：Taron Egerton/Colin Firth/Samuel L. Jackson</strong><br><strong>上映日期：2015-03-27</strong>  </p>
-<blockquote>
-<p>全程无尿点，幽默刺激而且过瘾，在电影院就着爆米花观影体验极佳。  </p>
-</blockquote>
-<h4 id="u3010_u4E09_u6708_u3011_u7070_u59D1_u5A18__u2605_u2606_u2606_u2606_u2606"><a href="#u3010_u4E09_u6708_u3011_u7070_u59D1_u5A18__u2605_u2606_u2606_u2606_u2606" class="headerlink" title="【三月】灰姑娘 ★☆☆☆☆"></a>【三月】灰姑娘 ★☆☆☆☆</h4><p><strong>导演：Kenneth Branagh</strong><br><strong>主演：Lily James/Richard Madden/Cate Blanchett</strong><br><strong>上映日期：2015-03-13</strong>  </p>
-<blockquote>
-<p>把耳熟能详的童话故事又讲了一遍，假装很美但是，被感动的人你们需要看这个电影来感动么。  </p>
-</blockquote>
-<h4 id="u3010_u4E8C_u6708_u3011_u72FC_u56FE_u817E__u2605_u2605_u2606_u2606_u2606"><a href="#u3010_u4E8C_u6708_u3011_u72FC_u56FE_u817E__u2605_u2605_u2606_u2606_u2606" class="headerlink" title="【二月】狼图腾 ★★☆☆☆"></a>【二月】狼图腾 ★★☆☆☆</h4><p><strong>导演：让·雅克·阿诺</strong><br><strong>主演：冯绍峰/窦骁/昂哈尼玛</strong><br><strong>上映日期：2015-02-19</strong>  </p>
-<blockquote>
-<p>没有太多印象了，感觉导演想表达的东西不完整不清晰吧，反而自己有点感触的是被驯养但还有野性的狼。以及窦骁的长相还真挺有特点的。  </p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2015/12/31/20151231/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/12/31/20151231/" itemprop="url">新年清单</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-31T07:51:13+08:00">
-                2015-12-31
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>最后一天啦，今年的跨年感有点强烈，可能是元旦过后确实会有新的生活。还有，今年仿佛是十几年来第一次不用准备期末考的元旦，棒呆了o(*≧▽≦)ツ┏━┓  </p>
-<p>那么，就来列一下新的一年想要完成的事情：</p>
-<blockquote>
-<ol>
-<li>练<del>马甲线</del>腹肌，普拉提中级（能跟着做完）</li>
-<li>尤克里里<del>精通</del>可以唬不会弹的人，练熟两首曲子</li>
-<li>学会迅速戴隐形眼镜（不会一年都戴不上吧，摔(￣^￣)ゞ）</li>
-<li>多交流，多交流，多交流，重要的事情说三遍</li>
-<li>有针对性和高效地做事（如此散漫的我╮(╯_╰)╭）</li>
-<li>积极、乐观、主动（鸡汤喝起来）</li>
-<li>坚持写博客</li>
-<li><del>减肥</del>不许变胖啊混蛋！</li>
-<li>和朋友们愉快地玩耍</li>
-<li>给亲人幸福感</li>
-</ol>
-</blockquote>
-<p>咦？好像还有一些没列？<br>哦，那些在去年的清单上。  </p>
-<blockquote>
-<ul>
-<li>摔(￣^￣)ゞ</li>
-</ul>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2015/12/18/20151218/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/12/18/20151218/" itemprop="url">尤克里里练习（小幸运）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-18T16:45:01+08:00">
-                2015-12-18
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>看少女时代没有什么感觉，弹小幸运却唱得快要哭出来T^T<br>可见我还是有那么一点少女心的≧ω≦  </p>
-<p><a href="http://v.youku.com/v_show/id_XMTQxNzIxMjc5Mg==.html" target="_blank" rel="external"><strong>小幸运</strong></a>  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/小幸运.jpg" alt="">  </p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2015/12/16/20151216/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/12/16/20151216/" itemprop="url">尤克里里练习（简单的歌）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-16T10:18:43+08:00">
-                2015-12-16
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>这两天练了一些简单的歌，主要是一些调式和弦以及扫弦节奏的组合。弹琴真是很能消磨时间的事情，感觉没事的话可以玩一整天，已顺利升级为新宠〜 准备把每次练的谱记在这里，以供将来查询和练习。<br>先来个和弦大全：<br><img src="http://7xp5rn.com1.z0.glb.clouddn.com/和弦.jpg" alt="">  </p>
-<p>以及一些简单的谱：<br><img src="http://7xp5rn.com1.z0.glb.clouddn.com/借口.jpg" alt="">  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/约定.jpg" alt="">  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/知足.jpg" alt="">  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/星晴.jpg" alt="">  </p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2015/12/14/20151214/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/12/14/20151214/" itemprop="url">尤克里里（澎湖湾、HoneyHoney）</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-14T12:04:16+08:00">
-                2015-12-14
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>自从超级棒的学妹把她的尤克里里借给我后，感觉又找到了一件适合自己的玩具。这货超级小，特别适合我硕大的身躯。最重要的是尤克里里的弦比吉它好按，而且声音偏轻巧，如果没按好弦哑了也不会显得太突兀，简直是为我这种手残党设计的。最简单的只要拿几个和弦，在尤克里里上可劲扫扫扫，就可以欢快地唱起来了。网上有很多尤克里里的谱和视频，我最近在看的是<a href="http://www.tanukulele.com/" target="_blank" rel="external"><strong>尤克里里小站</strong></a>，这里不但有谱，而且经常会配上弹唱视频，有些拍得像mv一样。结合视频会比单看谱容易上手，因为这样能够知道需要弹成什么样的效果。昨天在这里找了两首歌试弹，这是来自一个手残党的弹唱视频：  </p>
-<p><a href="http://v.youku.com/v_show/id_XMTQxMjc2NDA4MA==.html" target="_blank" rel="external"><strong>外婆的澎湖湾</strong></a>  </p>
-<p><a href="http://v.youku.com/v_show/id_XMTQxMjc2NjcwMA==.html" target="_blank" rel="external"><strong>honey honey</strong></a>  </p>
-<p>以及我用的谱：  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/wpdphw1.jpg" alt="">  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/Honey-Honey.jpg" alt="">  </p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2015/12/13/20151213/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/12/13/20151213/" itemprop="url">第一次10km比赛</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-13T22:57:27+08:00">
-                2015-12-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>先得瑟地晒一下我的奖状奖牌，以及感谢某人陪跑〜  </p>
-<p><img src="http://7xp5rn.com1.z0.glb.clouddn.com/20151213_1.jpg" alt="">     </p>
-<p>昨天双十二，然而我除了全家以及晚上的火锅并没有凑任何热闹。小峰峰几周前怂恿我报这天的校园马拉松，一定是为了迂回地阻止我买买买，而我居然没有识破这一点，细思恐极(￣^￣)ゞ  </p>
-<p>话说回来，终于完成了一个10km比赛，实现了一个小小的愿望，还是很有成就感的。10km对我来说不是很难，至少在一个说得过去的时间内跑完没问题，不过一直都是自己在操场或跑步机上瞎跑。突然发现参加个比赛特别好，这样以后老了向子孙吹嘘时就可以拿出奖状奖牌，而不是寒寒碜碜地翻出一张咕咚的截图。何况这个奖牌那么重又那么好看，如果有个校园半程马拉松，为了奖牌爬着也要跑完(..•˘_˘•..)  </p>
-<p>其实我真正开始练习跑步应该算是去年，当时本科阶段基本尘埃落定，除了毕设没有什么其它压力。而我又是个闲不住的人，就觉得总得尝试点新的事情。当然主要还是因为我穷，不能到处游山玩水地浪起来，于是只好挥洒汗水，想象自己奔跑在宇宙中心。刚开始跑个10圈就觉得可厉害了，跑个7的速度就开始大喘气了，还伴随着各种膝盖疼脚踝疼趾甲疼。后来到处看帖子学习姿势水平，慢慢减少伤痛以及提速，入了门之后10km就只是时间问题了。这件事情告诉我们一个道理：贫穷也可以是第一生产力（咦？）。还有就是：</p>
-<blockquote>
-<p>老赵的学生必须能跑(ง •̀_•́)ง   </p>
-</blockquote>
-<p>当然我现在的水平属于超超超业余，出于身体健康的目的没事这么跑跑应该够了。最近正在成形的目标是锻炼核心力量，主要是因为我穷，担心以后讨饭碗吃时没有搬砖的力气。核心力量的提高对跑步提速和运动损伤预防也有帮助。如果真能在老去之前再勾去两个小小的愿望：  </p>
-<ul>
-<li>10km跑进60min</li>
-<li>完成一次半程马拉松</li>
-</ul>
-<p>那对我来说真的是奇迹。但是谁知道呢，两年前10km也像是一个奇迹。</p>
-<blockquote>
-<p>壮士，干了这碗鸡汤。</p>
-</blockquote>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="http://yorkj.github.io/2015/12/10/20151210/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="YorkJ">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="YorkJ">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2015/12/10/20151210/" itemprop="url">岁末</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2015-12-10T12:43:23+08:00">
-                2015-12-10
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>迟钝如我，总是习惯以一副扑克脸面对生活的流转，然后在做出某种看似笃定的举动很久后才突然想到可信的理由，在脱离某些波澜不惊的时刻很久后才突然被隐蔽的情绪击中。就像现在处于回血模式的我——依然是一副扑克脸，呆坐于喧闹的生活中，想不出心中隐现的异样来自某月某日。  </p>
-<p>事实上，我甚至很难回想这一年的某月某日：它们比以往更快地离我而去，好似为了明证告别的坚决。最好我也同样坚决地离开这片废墟，抛却那种婆婆妈妈的缅怀和遗言，抛却乏味的所谓岁末总结，以及自以为的与过去握手言和的努力。可惜迟钝如我，只能更加茫然地回望，试图用沉默的过往给自己一些确信和勇气。  </p>
-<p>这一年至今，我认真记录自己心情的时候几乎屈指可数。不是因为改掉了多愁善感的坏脾气，只是到了这样一个尴尬的年龄，已经长大到那些小情绪开始显得无足轻重和矫情，又尚且稚嫩得说不出什么深刻的阅历和道理。何况迟钝如我，总是跟不上年龄增长的速度，总是一边拒绝着别人说的你应该，又一边怀疑着自己模糊的我想要。但是至少有一件事是我现在相信的：  </p>
-<blockquote>
-<p>我没有办法成为任何人，我只能成为我自己。<br>每个人独一无二的地方在于，他们必须完成自我的救赎。  </p>
-</blockquote>
-<p>这件事情让我想要开始记录，哪怕是琐碎的不如意的生活，和平庸的常常不知所措的自己。这应该可以算是一个新的开始吧，既然往事已经不可追，那么就以现在的确信印证确信，以现在的勇气印证勇气，以赤裸裸的自我，站在这个岁末告别和期冀。</p>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-  </section>
-
-  
-
-
-          </div>
-          
-
-
-          
-
-        </div>
-        
-          
-  
-  <div class="sidebar-toggle">
-    <div class="sidebar-toggle-line-wrap">
-      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
-      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
-    </div>
-  </div>
-
-  <aside id="sidebar" class="sidebar">
-    <div class="sidebar-inner">
-
-      
-
-      
-
-      <section class="site-overview sidebar-panel sidebar-panel-active">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
-               alt="YorkJ" />
-          <p class="site-author-name" itemprop="name">YorkJ</p>
-           
-              <p class="site-description motion-element" itemprop="description"></p>
-          
-        </div>
-        <nav class="site-state motion-element">
-
-          
-            <div class="site-state-item site-state-posts">
-              <a href="/archives">
-                <span class="site-state-item-count">10</span>
-                <span class="site-state-item-name">日志</span>
-              </a>
+    <!-- ============================ END Off-canvas navigation =========================== -->
+
+    <!-- ============================ #sb-site Main Page Wrapper =========================== -->
+
+    <div id="sb-site">
+        <!-- #sb-site - All page content should be contained within this id, except the off-canvas navigation itself -->
+
+        <!-- ============================ Header & Logo bar =========================== -->
+
+        <div id="navigation" class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <!-- Nav logo -->
+                    <div class="logo">
+                        <a href="/" title="Logo" class="animsition-link">
+                         <img src="/img/logo.png" alt="Logo" width="35px;"/> 
+                        </a>
+                    </div>
+                    <!-- // Nav logo -->
+                    <!-- Info-bar -->
+                    <nav>
+                        <ul class="nav">
+                            <li><a href="/" class="animsition-link">YorkJ</a></li>
+                            <li class="nolink"><span>Always </span>Creative.</li>
+                            
+                            <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a></li>
+                            
+                            
+                            <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+                            
+                            
+                            <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+                            
+                            
+                            <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a></li>
+                            
+                            
+                            <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a></li>
+                            
+                            <li class="nolink"><span>Welcome!</span></li>
+                        </ul>
+                    </nav>
+                    <!--// Info-bar -->
+                </div>
+                <!-- // .container -->
+                <div class="learnmore sb-toggle-right">More</div>
+                <button type="button" class="navbar-toggle menu-icon sb-toggle-right" title="More">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar before"></span>
+                <span class="icon-bar main"></span>
+                <span class="icon-bar after"></span>
+                </button>
             </div>
-          
+            <!-- // .navbar-inner -->
+        </div>
 
-          
+        <!-- ============================ Header & Logo bar =========================== -->
 
-          
-            
-            
-            <div class="site-state-item site-state-tags">
-              <a href="/tags/index.html">
-                <span class="site-state-item-count">6</span>
-                <span class="site-state-item-name">标签</span>
-              </a>
+        <!-- ============================ Hero Image =========================== -->
+
+        <section id="hero" class="scrollme">
+            <div class="container-fluid element-img" style="background: url(/img/bg_img.jpg) no-repeat center center fixed;background-size: cover">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 vertical-align cover boost text-center">
+                        <div class="center-me animateme" data-when="exit" data-from="0" data-to="0.6" data-opacity="0" data-translatey="100">
+                            <div>
+                            	
+                                <h2>MY <span>BIG FISH</span> MUST BE SOMEWHERE.</h2>
+                                <p></p>
+				    			
+                                <h2></h2>
+                                <p>。</p>
+				    			
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- // .col-md-12 -->
+                </div>
+                <div class="herofade beige-dk"></div>
             </div>
-          
+        </section>
 
+        <!-- Height spacing helper -->
+        <div class="heightblock"></div>
+        <!-- // End height spacing helper -->
+
+        <!-- ============================ END Hero Image =========================== -->
+      <!-- ============================ Content =========================== -->
+
+<section id="intro">
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2016/07/10/20160710/">Leetcode - Find K Pairs with Smallest Sums</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2016-07-10T08:42:50.000Z" itemprop="datePublished">
+          2016-07-10
+      </time>
+    
+    
+    | 
+    <a href='/tags/Leetcode/'>Leetcode</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        
+You are given two integer arrays nums1 and nums2 sorted in ascending order and an integer k.  
+Define a pair (u,v) which consists of one element from the first array and one element from the second array.  
+Find the k p
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2016/07/10/20160710/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2016/05/29/20160529/">Leetcode - Valid Number</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2016-05-29T03:16:31.000Z" itemprop="datePublished">
+          2016-05-29
+      </time>
+    
+    
+    | 
+    <a href='/tags/Leetcode/'>Leetcode</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        
+Validate if a given string is numeric.  
+Some examples:“0” =&gt; true“ 0.1 “ =&gt; true“abc” =&gt; false“1 a” =&gt; false“2e10” =&gt; true  
+Note: It is intended for the problem statement to be ambiguous. You should gat
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2016/05/29/20160529/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2016/01/13/20160113/">荒唐的羊</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2016-01-13T06:43:51.000Z" itemprop="datePublished">
+          2016-01-13
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>,
+    
+    <a href='/tags/音乐/'>音乐</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                             
+看到网易云的记录，我才发现自己有多么脑残粉，去年听歌Top10里，居然有9首都是曾绵羊的。于是我努力回想着去年到底听了什么鬼——  
+
+然后又跑去循环了曾轶可的歌单。  
+
+绵羊有一首歌叫《荒唐的羊》，最开始听到时我是很想吐槽的，羊爱上狼这种老梗可以让我想到一百首神曲。然而后来这首歌我还是听了很多遍，只为了听那句：  
+
+爱上你 不因为你的美丽 不因为对的时机不因为我有多孤寂只因阳光很好 你走过我身旁你说我荒不荒唐    
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2016/01/13/20160113/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2016/01/02/20160102/">2015观影回忆</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2016-01-02T01:18:48.000Z" itemprop="datePublished">
+          2016-01-02
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>,
+    
+    <a href='/tags/电影/'>电影</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        看了一下豆瓣记录，去年一年去影院看了11部电影，作为一个闵大荒的吃土少女，能保持一个月一部的频率已经是很难得了。主要归功于菁菁堂和碧江广场，极大地丰富了人民群众的文化生活。那么就来回忆一下这几部电影的观感。  
+【十二月】寻龙诀 ★★★★☆导演：乌尔善主演：陈坤/黄渤/舒淇/杨颖/夏雨上映日期：2015-12-18  
+
+值得去电影院看，整部看下来很流畅，也有不少抓人的小点。  
+作为系列小说改编的电影，虽然是一个小故事但是背后有作者设
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2016/01/02/20160102/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/12/31/20151231/">新年清单</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-12-30T23:51:13.000Z" itemprop="datePublished">
+          2015-12-31
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        最后一天啦，今年的跨年感有点强烈，可能是元旦过后确实会有新的生活。还有，今年仿佛是十几年来第一次不用准备期末考的元旦，棒呆了o(*≧▽≦)ツ┏━┓  
+那么，就来列一下新的一年想要完成的事情：
+
+
+练马甲线腹肌，普拉提中级（能跟着做完）
+尤克里里精通可以唬不会弹的人，练熟两首曲子
+学会迅速戴隐形眼镜（不会一年都戴不上吧，摔(￣^￣)ゞ）
+多交流，多交流，多交流，重要的事情说三遍
+有针对性和高效地做事（如此散漫的我╮(╯_╰)╭）
+积极、
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/12/31/20151231/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/12/18/20151218/">尤克里里练习（小幸运）</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-12-18T08:45:01.000Z" itemprop="datePublished">
+          2015-12-18
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>,
+    
+    <a href='/tags/音乐/'>音乐</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        看少女时代没有什么感觉，弹小幸运却唱得快要哭出来T^T可见我还是有那么一点少女心的≧ω≦  
+小幸运  
+  
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/12/18/20151218/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/12/16/20151216/">尤克里里练习（简单的歌）</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-12-16T02:18:43.000Z" itemprop="datePublished">
+          2015-12-16
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>,
+    
+    <a href='/tags/音乐/'>音乐</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        这两天练了一些简单的歌，主要是一些调式和弦以及扫弦节奏的组合。弹琴真是很能消磨时间的事情，感觉没事的话可以玩一整天，已顺利升级为新宠〜 准备把每次练的谱记在这里，以供将来查询和练习。先来个和弦大全：  
+以及一些简单的谱：  
+  
+  
+  
+
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/12/16/20151216/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/12/14/20151214/">尤克里里（澎湖湾、HoneyHoney）</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-12-14T04:04:16.000Z" itemprop="datePublished">
+          2015-12-14
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>,
+    
+    <a href='/tags/音乐/'>音乐</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        自从超级棒的学妹把她的尤克里里借给我后，感觉又找到了一件适合自己的玩具。这货超级小，特别适合我硕大的身躯。最重要的是尤克里里的弦比吉它好按，而且声音偏轻巧，如果没按好弦哑了也不会显得太突兀，简直是为我这种手残党设计的。最简单的只要拿几个和弦，在尤克里里上可劲扫扫扫，就可以欢快地唱起来了。网上有很多尤克里里的谱和视频，我最近在看的是尤克里里小站，这里不但有谱，而且经常会配上弹唱视频，有些拍得像mv一样。结合视频会比单看谱容易上手，因为这样
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/12/14/20151214/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/12/13/20151213/">第一次10km比赛</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-12-13T14:57:27.000Z" itemprop="datePublished">
+          2015-12-13
+      </time>
+    
+    
+    | 
+    <a href='/tags/生活/'>生活</a>,
+    
+    <a href='/tags/运动/'>运动</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        先得瑟地晒一下我的奖状奖牌，以及感谢某人陪跑〜  
+     
+昨天双十二，然而我除了全家以及晚上的火锅并没有凑任何热闹。小峰峰几周前怂恿我报这天的校园马拉松，一定是为了迂回地阻止我买买买，而我居然没有识破这一点，细思恐极(￣^￣)ゞ  
+话说回来，终于完成了一个10km比赛，实现了一个小小的愿望，还是很有成就感的。10km对我来说不是很难，至少在一个说得过去的时间内跑完没问题，不过一直都是自己在操场或跑步机上瞎跑。突然发现参加个比赛特
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/12/13/20151213/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2 opening-statement">
+                <div class="col-md-4">
+                    <h3><a href="/2015/12/10/20151210/">岁末</a></h3>
+                    <span>
+                        <span class="post-meta">
+      <time datetime="2015-12-10T04:43:23.000Z" itemprop="datePublished">
+          2015-12-10
+      </time>
+    
+    
+    | 
+    <a href='/tags/随笔/'>随笔</a>
+    
+    
+</span>
+                    </span>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                      
+                        迟钝如我，总是习惯以一副扑克脸面对生活的流转，然后在做出某种看似笃定的举动很久后才突然想到可信的理由，在脱离某些波澜不惊的时刻很久后才突然被隐蔽的情绪击中。就像现在处于回血模式的我——依然是一副扑克脸，呆坐于喧闹的生活中，想不出心中隐现的异样来自某月某日。  
+事实上，我甚至很难回想这一年的某月某日：它们比以往更快地离我而去，好似为了明证告别的坚决。最好我也同样坚决地离开这片废墟，抛却那种婆婆妈妈的缅怀和遗言，抛却乏味的所谓岁末总结，以
+                      
+                    </p>
+                    
+                    <p class="pull-right readMore">
+                        <a href="/2015/12/10/20151210/">Read More...</a>
+                    </p>
+                    
+                </div>
+                <div class="clearfix"></div>
+                <hr class="nogutter">
+            </div>
+        </div>
+        
+        <nav class="pagination" role="pagination">
+          
+          
         </nav>
-
-        
-
-        <div class="links-of-author motion-element">
-          
-        </div>
-
-        
-        
-
-        
-        
-
-        
-
-
-      </section>
-
-      
-
-      
-
     </div>
-  </aside>
+</section>
+<section id="statement">
+    <div class="container text-center wow fadeInUp" data-wow-delay="0.5s">
+        <div class="row">
+            <p></p>
+        </div>
+    </div>
+</section>
+<!-- ============================ END Content =========================== -->
 
+      
+<!-- ============================ Footer =========================== -->
 
+<footer>
+    <div class="container">
+            <div class="copy">
+                <p>
+                    &copy; 2014<script>new Date().getFullYear()>2010&&document.write("-"+new Date().getFullYear());</script>, Content By YorkJ. All Rights Reserved.
+                </p>
+                <p>Theme By <a href="//go.kieran.top" style="color: #767D84">Kieran</a></p>
+            </div>
+            <div class="social">
+                <ul>
+                    
+                    <li><a href="https://github.com/" title="Github" target="_blank"><i class="icon-github"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://twitter.com/" title="Twitter" target="_blank"><i class="icon-twitter"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://www.facebook.com/" title="Facebook" target="_blank"><i class="icon-facebook"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="https://google.com/" title="Google-Plus" target="_blank"><i class="icon-google-plus"></i></a>&nbsp;</li>
+                    
+                    
+                    <li><a href="http://weibo.com/" title="Sina-Weibo" target="_blank"><i class="icon-sina-weibo"></i></a>&nbsp;</li>
+                    
+                </ul>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+</footer>
+
+<!-- ============================ END Footer =========================== -->
+      <!-- Load our scripts -->
         
-      </div>
-    </main>
-
-    <footer id="footer" class="footer">
-      <div class="footer-inner">
-        <div class="copyright" >
-  
-  &copy; 
-  <span itemprop="copyrightYear">2017</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">YorkJ</span>
-</div>
-
-
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Mist
-  </a>
-</div>
-
-
-        
-
-        
-      </div>
-    </footer>
-
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
-    
-
-  </div>
-
-  
-
+<!-- Resizable 'on-demand' full-height hero -->
 <script type="text/javascript">
-  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
-    window.Promise = null;
-  }
+    
+    var resizeHero = function () {
+        var hero = $(".cover,.heightblock"),
+            window1 = $(window);
+        hero.css({
+            "height": window1.height()
+        });
+    };
+    
+    resizeHero();
+    
+    $(window).resize(function () {
+        resizeHero();
+    });
 </script>
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-  
-  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
-
-  
-  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
-
-  
-  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
-
-  
-  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
-
-
-  
-
-
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.1"></script>
-
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.1"></script>
-
-
-
-  
-  
-
-  
-    <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.1"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.1"></script>
-
-  
-
-  
-
-
-  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.1"></script>
-
-
-
-  
-
-
-  
-
-
-
-
-	
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-
-
-
-
-
-  
-
-
-
-
-
-  
-
-  
-
-  
-
-  
-
-  
-
-  
+<script src="/js/plugins.min.js"></script><!-- Bootstrap core and concatenated plugins always load here -->
+<script src="/js/jquery.flexslider-min.js"></script><!-- Flexslider plugin -->
+<script src="/js/scripts.js"></script><!-- Theme scripts -->
+
+<!-- Initiate flexslider plugin -->
+<script type="text/javascript">
+    $(document).ready(function($) {
+      $('.flexslider').flexslider({
+        animation: "fade",
+        prevText: "",
+        nextText: "",
+        directionNav: true
+      });
+    });
+</script>
 
 </body>
 </html>
